@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-lib = File.expand_path('../sunspot/lib/', __FILE__)
+lib = File.expand_path('../../sunspot/lib/', __FILE__)
 
 $:.unshift(lib) unless $:.include?(lib)
 
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
                   'Brian Atkinson', 'Tom Coleman', 'Matt Mitchell', 'Nathan Beyer', 'Kieran Topping', 'Nicolas Braem', 'Jeremy Ashkenas',
                   'Dylan Vaughn', 'Brian Durand', 'Sam Granieri', 'Nick Zadrozny', 'Jason Ronallo']
   s.email       = ["mat@patch.com"]
-  s.homepage = 'http://github.com/outoftime/sunspot/tree/master/sunspot_rails'
+  s.homepage    = 'http://github.com/outoftime/sunspot/tree/master/sunspot_rails'
   s.summary     = 'Rails integration for the Sunspot Solr search library'
   s.description = <<-TEXT
     Sunspot::Rails is an extension to the Sunspot library for Solr search.
@@ -36,8 +36,4 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rspec', '~> 1.2'
   s.add_development_dependency 'rspec-rails', '~> 1.2'
-
-  s.rdoc_options << '--webcvs=http://github.com/outoftime/sunspot/tree/master/%s' <<
-                  '--title' << 'Sunspot-Rails - Rails integration for the Sunspot Solr search library - API Documentation' <<
-                  '--main' << 'README.rdoc'
 end
